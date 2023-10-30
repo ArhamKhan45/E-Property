@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+      integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/5468e71022.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>E-property</title>
+  </head>
+  <body>
+    <!-- navbar strats  -->
+    <nav class="navbar navbar-expand-xl bg-primary" id="home">
+      <div class="container px-2">
+        <a class="navbar-brand" href="#">
+          <span class="h1 nav-E-text-color h1 fw-bolder">E-</span
+          ><span class="text-white h1 fw-bolder pe-5">Property</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"
+            ><i
+              class="fa-solid fa-bars nav-E-text-color"
+              style="font-size: 28px"
+            ></i
+          ></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 ms-3 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link nav-font-color active ms-xl-5 me-4"
+                aria-current="page"
+                href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-font-color me-4" href="#">About</a>
+            </li>
+
+            <li class="nav-item dropdown me-4">
+              <a
+                class="nav-link dropdown-toggle nav-font-color"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Pages
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#">Action</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Another action</a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown me-4">
+              <a
+                class="nav-link dropdown-toggle nav-font-color"
+                href="#"
+                data-bs-toggle="dropdown"
+                role="button"
+                aria-expanded="false"
+                >Blog</a
+              >
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown me-4">
+              <a
+                class="nav-link dropdown-toggle nav-font-color"
+                href="#"
+                data-bs-toggle="dropdown"
+                role="button"
+                aria-expanded="false"
+                >Shop</a
+              >
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-font-color" href="#">Contact</a>
+            </li>
+          </ul>
+          <button
+            class="btn btn-success text-white nav-button-bg-color ms-auto"
+            type="submit"
+          >
+            <i class="fas fa-search fa-1x"></i>
+            FIND PROPERTY
+          </button>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar ends  -->
+    <!-- carousel starts -->
+    <div
+      id="carouselExampleInterval"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div
+          class="carousel-item active position-relative"
+          data-bs-interval="5000"
+        >
+          <img
+            src="./Images/slider_img_1.png"
+            class="d-block w-100 slider_height"
+            alt="..."
+          />
+          <div
+            class="carousel-caption position-absolute top-25 text-dark text-sm-start p-4 carousel-content-box bg-white animated bounceInLeft"
+            style="animation-delay: 0s; animation-duration: 3s"
+          >
+            <p class="w-100 fs-15 text-primary">
+              <i class="fa-sharp fa-solid fa-location-dot h4"> </i>
+              Melbourne,Australia
+            </p>
+            <p class="fs-20 m-0 fw-bolder h2">60 Thornley Street,</p>
+            <p class="fs-20 fw-bolder h2">Marrickville,NSW 2204</p>
+            <i class="fa-solid fa-bed">3</i>
+            <i class="fa-solid fa-bath">3</i>
+            <i class="fa-solid fa-share-from-square"></i
+            ><label>1200sq ft</label>
+            <p class="mt-2 mt-md-4">
+              <button class="btn nav-button-bg-color text-white">
+                CHECK PROPERTY
+              </button>
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="5000">
+          <img
+            src="./Images/slider_img_2.png"
+            class="d-block w-100 slider_height"
+            alt="..."
+          />
+          <div
+            class="carousel-caption position-absolute top-25 text-dark text-sm-start p-4 carousel-content-box bg-white animated bounceInRight"
+            style="animation-delay: 0s; animation-duration: 3s"
+          >
+            <p class="w-100 fs-15 text-primary">
+              <i class="fa-sharp fa-solid fa-location-dot h4"> </i>
+              Melbourne,Australia
+            </p>
+            <p class="fs-20 m-0 fw-bolder h2">60 Thornley Street,</p>
+            <p class="fs-20 fw-bolder h2">Marrickville,NSW 2204</p>
+            <i class="fa-solid fa-bed">3</i>
+            <i class="fa-solid fa-bath">3</i>
+            <i class="fa-solid fa-share-from-square"></i
+            ><label>1200sq ft</label>
+            <p class="mt-2 mt-md-4">
+              <button class="btn nav-button-bg-color text-white">
+                CHECK PROPERTY
+              </button>
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="./Images/slider_img_3.png"
+            class="d-block w-100 slider_height"
+            alt="..."
+          />
+          <div
+            class="carousel-caption position-absolute top-25 text-dark text-sm-start p-4 carousel-content-box bg-white animated bounceInLeft"
+            style="animation-delay: 0s; animation-duration: 3s"
+          >
+            <p class="fs-15 text-primary">
+              <i class="fa-sharp fa-solid fa-location-dot h4"> </i>
+              Melbourne,Australia
+            </p>
+            <p class="fs-20 m-0 fw-bolder h2">60 Thornley Street,</p>
+            <p class="fs-20 fw-bolder h2">Marrickville,NSW 2204</p>
+            <i class="fa-solid fa-bed">3</i>
+            <i class="fa-solid fa-bath">3</i>
+            <i class="fa-solid fa-share-from-square"></i
+            ><label>1200sq ft</label>
+            <p class="mt-2 mt-md-4">
+              <button class="btn nav-button-bg-color text-white">
+                CHECK PROPERTY
+              </button>
+            </p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleInterval"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleInterval"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- what we do starts -->
+    <div class="container my-5">
+      <p class="h2 text-center">What We Do</p>
+      <p class="fs-5 w-75 mx-auto text-center">
+        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+        cubilia Curae;Nulla mollis dpibus nunc ut rhoncus turpis sodales
+        quis.Integer sit amet mattis quam.
+      </p>
+    </div>
+    <!-- what we do ends -->
+    <!-- what we do 6boxes starts -->
+    <div class="container">
+      <div class="row what">
+        <div
+          class="col-8 col-xl-3 col-sm-5 border border-2 p-4 ms-xl-auto mx-auto mb-4 shadow-sm box1"
+        >
+          <i class="fas fa-home fa-2x"></i>
+          <p class="h4">Office Agency</p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. eaque
+            possimus aliquid ad numquam.
+          </p>
+          <a href="#" class="text-decoration-none"
+            >Read More<i class="fa-solid fa-arrow-right mx-2"></i
+          ></a>
+        </div>
+        <div
+          class="col-8 col-xl-3 col-sm-5 border border-2 p-4 mx-xl-1 mx-auto mb-4 shadow-sm box1"
+        >
+          <i class="fa-solid fa-building-columns fa-2x"></i>
+          <p class="h4">Retail Agency</p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. eaque
+            possimus aliquid ad numquam.
+          </p>
+          <a href="#" class="text-decoration-none"
+            >Read More<i class="fa-solid fa-arrow-right mx-2"></i
+          ></a>
+        </div>
+        <div
+          class="col-8 col-xl-3 col-sm-5 border border-2 p-4 mx-auto me-xl-auto mb-4 shadow-sm box1"
+        >
+          <i class="fa-regular fa-hourglass fa-2x"></i>
+          <p class="h4">Industrial Agency</p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. eaque
+            possimus aliquid ad numquam.
+          </p>
+          <a href="#" class="text-decoration-none"
+            >Read More<i class="fa-solid fa-arrow-right mx-2"></i
+          ></a>
+        </div>
+        <div
+          class="col-8 col-xl-3 col-sm-5 border border-2 p-4 mx-auto ms-xl-auto mb-4 shadow-sm box1"
+        >
+          <i class="fa-regular fa-futbol fa-2x"></i>
+          <p class="h4">Property & Asset</p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. eaque
+            possimus aliquid ad numquam.
+          </p>
+          <a href="#" class="text-decoration-none"
+            >Read More<i class="fa-solid fa-arrow-right mx-2"></i
+          ></a>
+        </div>
+        <div
+          class="col-8 col-xl-3 col-sm-5 border border-2 p-4 mx-auto mx-xl-1 mb-4 shadow-sm box1"
+        >
+          <i class="fa-solid fa-cubes fa-2x"></i>
+          <p class="h4">Building Surviying</p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. eaque
+            possimus aliquid ad numquam.
+          </p>
+
+          <a href="#" class="text-decoration-none"
+            >Read More<i class="fa-solid fa-arrow-right mx-2"></i
+          ></a>
+        </div>
+        <div
+          class="col-8 col-xl-3 col-sm-5 border border-2 p-4 mx-auto me-xl-auto mb-4 shadow-sm box1"
+        >
+          <i class="fa fa-area-chart icon-siz fa-2x"></i>
+          <p class="h4">Total Investment</p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. eaque
+            possimus aliquid ad numquam.
+          </p>
+
+          <a href="#" class="text-decoration-none"
+            >Read More<i class="fa-solid fa-arrow-right mx-2"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+    <!-- what we do 6boxes ends -->
+    <!-- properties strarts  -->
+    <div class="container-fluid house-background-image text-white mt-5">
+      <div class="row my-auto w-100 h-100 py-5">
+        <div class="col-12 col-md-3 text-center">
+          <p
+            class="fs-1"
+            style="font-variant-numeric: oldstyle-nums stacked-fractions"
+          >
+            445
+          </p>
+          <p class="text-uppercase">Properties to Rent</p>
+        </div>
+        <div class="col-12 col-md-3 text-center">
+          <p
+            class="fs-1"
+            style="font-variant-numeric: oldstyle-nums stacked-fractions"
+          >
+            350
+          </p>
+          <p class="text-uppercase">Properties for sale</p>
+        </div>
+        <div class="col-12 col-md-3 text-center">
+          <p
+            class="fs-1"
+            style="font-variant-numeric: oldstyle-nums stacked-fractions"
+          >
+            350
+          </p>
+          <p class="text-uppercase">Properties Under offers</p>
+        </div>
+        <div class="col-12 col-md-3 text-center">
+          <p
+            class="fs-1"
+            style="font-variant-numeric: oldstyle-nums stacked-fractions"
+          >
+            25k
+          </p>
+          <p class="text-uppercase">sqare. ft</p>
+        </div>
+      </div>
+    </div>
+    <!-- properties ends     -->
+    <!-- Recently Added Properties -->
+    <div class="container my-5">
+      <p class="h2 text-center">Recently Added Properties</p>
+      <p class="fs-5 w-75 mx-auto text-center">
+        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+        cubilia Curae;Nulla mollis dpibus nunc ut rhoncus turpis sodales
+        quis.Integer sit amet mattis quam.
+      </p>
+    </div>
+    <!-- Recently Added Properties -->
+    <!-- 6images starts -->
+    <div class="container">
+      <div class="row added">
+        <div class="col-12 col-sm-6 col-md-5 col-xl-4 mb-4 mx-auto mx-xl-start">
+          <img src="./Images/g12.jpg" alt="" class="img-fluid rounded w-95" />
+          <p class="h5 fw-bolder mt-2 ms-xl-4">84 Woodland St. Cocoa</p>
+          <p class="ms-xl-4">661-699 N Mc Clurg Ct, Chicago, IL 60611, USA</p>
+          <i class="fa-solid fa-bed me-2 ms-xl-4"></i
+          ><label class="me-xl-3">4 Beds</label>
+          <i class="fa-solid fa-bath ms-xl-2"></i
+          ><label class="me-xl-3">3 Baths</label>
+          <i class="fa-solid fa-share-from-square ms-xl-2"></i
+          ><label class="me-xl-3">1200 sq ft</label>
+        </div>
+        <div class="col-12 col-sm-6 col-md-5 col-xl-4 mb-4 mx-auto mx-xl-start">
+          <img src="./Images/g11.jpg" alt="" class="img-fluid rounded w-95" />
+          <p class="h5 fw-bolder mt-2 ms-xl-4">28 Westport Dr.Warminster</p>
+          <p class="ms-xl-4">661-699 N Mc Clurg Ct, Chicago, IL 60611, USA</p>
+          <i class="fa-solid fa-bed me-2 ms-xl-4"></i
+          ><label class="me-xl-3">3 Beds</label>
+          <i class="fa-solid fa-bath ms-xl-2"></i
+          ><label class="me-xl-3">2 Baths</label>
+          <i class="fa-solid fa-share-from-square ms-xl-2"></i
+          ><label class="me-xl-3">1200 sq ft</label>
+        </div>
+        <div class="col-12 col-sm-6 col-md-5 col-xl-4 mb-4 mx-auto mx-xl-start">
+          <img src="./Images/g10.jpg" alt="" class="img-fluid rounded w-95" />
+          <p class="h5 fw-bolder mt-2 ms-xl-4">32 Pawnee Street Butte</p>
+          <p class="ms-xl-4">661-699 N Mc Clurg Ct, Chicago, IL 60611, USA</p>
+          <i class="fa-solid fa-bed me-2 ms-xl-4"></i
+          ><label class="me-xl-3">4 Beds</label>
+          <i class="fa-solid fa-bath ms-xl-2"></i
+          ><label class="me-xl-3">3 Baths</label>
+          <i class="fa-solid fa-share-from-square ms-xl-2"></i
+          ><label class="me-xl-3">1200 sq ft</label>
+        </div>
+        <div class="col-12 col-sm-6 col-md-5 col-xl-4 mb-4 mx-auto mx-xl-start">
+          <img src="./Images/g9.jpg" alt="" class="img-fluid rounded w-95" />
+          <p class="h5 fw-bolder mt-2 ms-xl-4">2 Glen Creek St. Alexandria</p>
+          <p class="ms-xl-4">661-699 N Mc Clurg Ct, Chicago, IL 60611, USA</p>
+          <i class="fa-solid fa-bed me-2 ms-xl-4"></i
+          ><label class="me-xl-3">5 Beds</label>
+          <i class="fa-solid fa-bath ms-xl-2"></i
+          ><label class="me-xl-3">3 Baths</label>
+          <i class="fa-solid fa-share-from-square ms-xl-2"></i
+          ><label class="me-xl-3">1200 sq ft</label>
+        </div>
+        <div class="col-12 col-sm-6 col-md-5 col-xl-4 mb-4 mx-auto mx-xl-start">
+          <img src="./Images/g8.jpg" alt="" class="img-fluid rounded w-95" />
+          <p class="h5 fw-bolder mt-2 ms-xl-4">798 Talbot St. Bridgewater</p>
+          <p class="ms-xl-4">661-699 N Mc Clurg Ct, Chicago, IL 60611, USA</p>
+          <i class="fa-solid fa-bed me-2 ms-xl-4"></i
+          ><label class="me-xl-3">2 Beds</label>
+          <i class="fa-solid fa-bath ms-xl-2"></i
+          ><label class="me-xl-3">1 Baths</label>
+          <i class="fa-solid fa-share-from-square ms-xl-2"></i
+          ><label class="me-xl-3">1200 sq ft</label>
+        </div>
+        <div class="col-12 col-sm-6 col-md-5 col-xl-4 mb-4 mx-auto mx-xl-start">
+          <img src="./Images/g7.jpg" alt="" class="img-fluid rounded w-95" />
+          <p class="h5 fw-bolder mt-2 ms-xl-4">7240C Argyle St.Lawndale</p>
+          <p class="ms-xl-4">661-699 N Mc Clurg Ct, Chicago, IL 60611, USA</p>
+          <i class="fa-solid fa-bed me-2 ms-xl-4"></i
+          ><label class="me-xl-3">4 Beds</label>
+          <i class="fa-solid fa-bath ms-xl-2"></i
+          ><label class="me-xl-3">3 Baths</label>
+          <i class="fa-solid fa-share-from-square ms-xl-2"></i
+          ><label class="me-xl-3">1200 sq ft</label>
+        </div>
+      </div>
+    </div>
+
+    <!-- 6images Ends-->
+    <!-- back-image start part 2 -->
+    <div class="container-fluid position-relative zero-mp">
+      <div class="house-background-image2"></div>
+      <div class="row w-100 position-absolute top-15">
+        <div
+          class="col-12 col-xl-4 col-sm-6 ms-sm-auto mb-5 text-center text-sm-start"
+        >
+          <p class="fs-1 fw-bolder">
+            Common Sense Solutions For All Aspects Of Commercial Property,
+            Development Land.
+          </p>
+          <button class="btn nav-button-bg-color nav-font-color rounded">
+            CONTACT US
+          </button>
+        </div>
+        <div
+          class="col-12 col-xl-4 col-sm-5 me-sm-auto text-center text-sm-start"
+        >
+          <p class="fs-6">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur.
+          </p>
+          <p class="fs-6">
+            Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo consequat. Duis aute irure dolor in reprehenderit in
+            voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          </p>
+          <div class="row mt-5">
+            <div class="col-3 col-sm-4 col-xl-3 ms-auto">
+              <img
+                src="./Images/te1.jpg"
+                alt=""
+                class="img-fluid rounded-circle mx-auto d-block"
+              />
+            </div>
+            <div
+              class="col-6 col-sm-8 col-xl-6 mt-xl-3 text-center me-auto text-sm-start"
+            >
+              <p class="h4">Henry Nicholas</p>
+              <p>
+                <a href="#" class="nav-E-text-color text-decoration-none fs-5"
+                  >Agent</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- back-image end part 2 -->
+    <!-- latest News starts  -->
+    <div class="container my-5">
+      <p class="h2 text-center">Latest News</p>
+      <p class="fs-5 w-75 mx-auto text-center">
+        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+        cubilia Curae;Nulla mollis dpibus nunc ut rhoncus turpis sodales
+        quis.Integer sit amet mattis quam.
+      </p>
+    </div>
+    <!-- Latest news ends here -->
+    <!-- 3images starts -->
+    <div class="container">
+      <div class="row">
+        <div
+          class="col-12 col-sm-5 col-lg-3 mb-4 mx-auto ms-lg-auto mx-lg-0 back-image1 position-relative"
+        >
+          <div class="mini-box position-absolute bottom-10 start-10">
+            <p class="h6 nav-E-text-color">December 17, 2019</p>
+            <p class="h6 fw-bold hover-doer">
+              Retail banks wake up to digital lending this year
+            </p>
+          </div>
+        </div>
+        <div
+          class="col-12 col-sm-5 col-lg-3 mb-4 mx-auto mx-lg-5 back-image2 position-relative"
+        >
+          <div class="mini-box position-absolute bottom-10 start-10">
+            <p class="h6 nav-E-text-color">December 17, 2019</p>
+            <p class="h6 fw-bold hover-doer">
+              Strategic and commercial approach with issues
+            </p>
+          </div>
+        </div>
+        <div
+          class="col-12 col-sm-5 mx-auto mx-lg-0 col-lg-3 mb-4 me-auto me-lg-auto back-image3 position-relative"
+        >
+          <div class="mini-box position-absolute bottom-10 start-10">
+            <p class="h6 nav-E-text-color">December 17, 2019</p>
+            <p class="h6 fw-bold hover-doer">
+              Within the construction industry as their overdraft
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3 images ends here -->
+    <!-- properties strarts  -->
+    <div class="container-fluid text-dark mt-5 position-relative zero-mp">
+      <div class="house-background-image3"></div>
+      <div class="row my-5 w-100 position-absolute top-0">
+        <div class="col-12 col-lg-4 ms-sm-auto text-center text-lg-start">
+          <p class="h2 fw-bolder">Keep up to date — Get e-mail updates</p>
+          <p class="fw-bold">Stay tuned for the latest company news.</p>
+        </div>
+        <div
+          class="col-12 col-lg-5 h-75 mx-auto my-auto p-0 border-0 m-2 text-center text-lg-start"
+        >
+          <form>
+            <input
+              type="search"
+              placeholder="Enter your Email"
+              class="d-inline w-50 p-3 m-0 border-0"
+            />
+            <button
+              class="btn nav-button-bg-color ms-auto d-inline text-white p-3"
+            >
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- properties ends     -->
+    <!-- latest News starts  -->
+    <div class="container my-5">
+      <p class="h2 text-center">Happy Clients</p>
+      <p class="fs-5 w-75 mx-auto text-center">
+        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+        cubilia Curae;Nulla mollis dpibus nunc ut rhoncus turpis sodales
+        quis.Integer sit amet mattis quam.
+      </p>
+    </div>
+    <!-- Latest news ends here -->
+    <!-- 2 Person START -->
+    <div class="container my-5">
+      <div class="row">
+        <div
+          class="col-lg-4 ms-lg-auto ms-auto me-5 p-5 background-color-light-blue my-4"
+        >
+          <i class="fa-solid fa-star text-warning"></i>
+          <i class="fa-solid fa-star text-warning"></i>
+          <i class="fa-solid fa-star text-warning"></i>
+          <i class="fa-solid fa-star text-warning"></i>
+          <i class="fa-solid fa-star text-warning"></i>
+
+          <p class="mt-2">
+            Lorem ipsum dolor sit amet, consectetur adipisicingelit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud
+          </p>
+          <div class="row mt-5">
+            <div class="col-3 col-sm-4 col-xl-3 ms-auto">
+              <img
+                src="./Images/te2.jpg"
+                alt=""
+                class="img-fluid rounded-circle mx-auto d-block"
+              />
+            </div>
+            <div
+              class="col-6 col-sm-8 col-xl-6 mt-xl-3 text-center me-auto text-sm-start"
+            >
+              <p class="h4">Shane Watson</p>
+              <p>
+                <a href="#" class="nav-E-text-color text-decoration-none fs-5"
+                  >Co-founder</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-lg-4 me-lg-auto me-auto p-5 background-color-light-blue my-4"
+        >
+          <i class="fa-solid fa-star text-warning"></i>
+          <i class="fa-solid fa-star text-warning"></i>
+          <i class="fa-solid fa-star text-warning"></i>
+          <i class="fa-solid fa-star text-warning"></i>
+          <i class="fa-solid fa-star text-warning"></i>
+
+          <p class="mt-2">
+            Lorem ipsum dolor sit amet, consectetur adipisicingelit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud
+          </p>
+          <div class="row mt-5">
+            <div class="col-3 col-sm-4 col-xl-3 ms-auto">
+              <img
+                src="./Images/te3.jpg"
+                alt=""
+                class="img-fluid rounded-circle mx-auto d-block"
+              />
+            </div>
+            <div
+              class="col-6 col-sm-8 col-xl-6 mt-xl-3 text-center me-auto text-sm-start"
+            >
+              <p class="h4">Henry Nicholas</p>
+              <p>
+                <a href="#" class="nav-E-text-color text-decoration-none fs-5"
+                  >Client</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 2 Person End -->
+    <!-- footer Starts  -->
+    <footer>
+      <div class="container-fluid footer-back-color py-5">
+        <div class="row w-100">
+          <div
+            class="col-8 col-xl-4 mx-auto mx-xl-0 text-center text-xl-start ms-xl-auto"
+          >
+            <p class="nav-E-text-color h2">Estate Property</p>
+            <p class="text-white">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <p class="nav-E-text-color">
+              <i class="fa-brands fa-facebook me-2"></i>
+              <i class="fa-brands fa-twitter me-2"></i>
+              <i class="fa-solid fa-basketball me-2"></i>
+              <i class="fa-brands fa-google me-2"></i>
+            </p>
+          </div>
+          <div
+            class="col-xl-2 text-white mx-xl-4 col-8 text-center mx-auto text-xl-start"
+          >
+            <p class="h3 mb-3">Important Links</p>
+            <p>Home</p>
+            <p>About</p>
+            <p>Services</p>
+            <p>Blog</p>
+            <p>Contact</p>
+          </div>
+          <div
+            class="col-xl-3 text-white me-xl-auto col-8 mx-auto mx-xl-0 text-center text-xl-start"
+          >
+            <p class="h3">Recent Posts</p>
+            <div class="row mt-4">
+              <div class="col-xl-3 col-8 mx-auto mx-xl-0">
+                <img src="./Images/g1.jpg" alt="" class="img-fluid" />
+              </div>
+              <div class="col-xl-8 col-12 me-lx-auto text-center text-xl-start">
+                <p>We Are Leading International Consultiing Agency</p>
+                <p>
+                  <i class="fa-solid fa-basketball nav-E-text-color me-2"></i
+                  >December 17, 2019
+                </p>
+              </div>
+              <div class="col-xl-3 col-8 mx-auto mx-xl-0">
+                <img src="./Images/g2.jpg" alt="" class="img-fluid" />
+              </div>
+              <div class="col-xl-8 col-12 me-lx-auto text-center text-xl-start">
+                <p>We Are Leading International Consultiing Agency</p>
+                <p>
+                  <i class="fa-solid fa-basketball nav-E-text-color me-2"></i
+                  >December 17, 2019
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer ends -->
+    <!-- copyright-content starts -->
+    <div
+      class="container-fluid copy-right-back-color text-center text-white py-3"
+    >
+      <p>
+        2020 Estate Property. All Rights Reserved.Design by
+        <span class="nav-E-text-color">W3layouts</span>
+      </p>
+    </div>
+    <div class="fixed-return-button-fixer">
+      <a href="#home"
+        ><button class="btn fixed-return-button p-2">
+          <i class="fa-sharp fa-solid fa-arrow-up fa-2x"></i></button
+      ></a>
+    </div>
+    <!-- copyright-content ends -->
+    <!-- offcanvas start  -->
+    <button
+      class="btn nav-button-bg-color position-fixed top-0 end-0 text-white"
+      type="button"
+      data-bs-toggle="offcanvas"
+      data-bs-target="#offcanvasRight"
+      aria-controls="offcanvasRight"
+    >
+      <i class="fa-sharp fa-solid fa-arrow-left fa-1x"></i>
+    </button>
+
+    <div
+      class="offcanvas offcanvas-end"
+      tabindex="-1"
+      id="offcanvasRight"
+      aria-labelledby="offcanvasRightLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasRightLabel">E-property</h5>
+        <button
+          type="button"
+          class="btn fa-sharp fa-solid fa-arrow-right"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body text-center">
+        <i class="fa-sharp fa-solid fa-arrow-right fa-3x mb-2"></i>
+        <p class="mb-5 fs-2">Back</p>
+        <i class="fa-solid fa-download mt-5 fa-3x mb-2"></i>
+        <p class="mb-5 fs-2">Download</p>
+        <i class="fa-solid fa-cart-shopping mt-5 fa-3x mb-2"></i>
+        <p class="mb-5 fs-2">Buy</p>
+      </div>
+    </div>
+    <!-- offcanvas End  -->
+  </body>
+</html>
